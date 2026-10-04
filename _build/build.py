@@ -96,9 +96,9 @@ def footer(prefix):
 STATS = [
     ("70<small>+</small>", "integration interfaces documented at Afreximbank"),
     ("35", "training videos produced for one platform, about 53 minutes"),
-    ("79", "help centre and knowledge base articles built from zero"),
+    ("79", "help centre and knowledge base articles, built from zero for one platform"),
     ("2,000<small>+</small>", "professionals trained in strategic communication"),
-    ("96<small>%</small>", "participant satisfaction across training programmes"),
+    ("96<small>%</small>", "participant satisfaction in strategic communication training"),
     ("98<small>%</small>", "customer satisfaction with the Subkit knowledge base"),
 ]
 
@@ -109,18 +109,18 @@ CAPS = [
      ["Help centres", "Knowledge bases", "SharePoint", "Style guides and SOPs"]),
     ("Technology enablement", "Onboarding that gets people using a new system: product tours, quick guides, email series and walkthroughs aimed at adoption, not just reference.",
      ["Onboarding kits", "Quick guides", "Product tours", "Adoption"]),
-    ("Instructional design", "Turning unstructured expertise into sequenced learning, with clear objectives, exercises and assessments that fit the audience and the time available.",
+    ("Instructional design", "Turning unstructured expertise into sequenced learning, with clear objectives, hands-on exercises and pre-workshop surveys that fit the audience and the time available.",
      ["Curriculum design", "Learning objectives", "Exercises", "Facilitator guides"]),
-    ("Training and course development", "Training videos and course materials, from script to finished episode, using an AI-assisted pipeline with human review of every claim.",
+    ("Training and course development", "Training videos and course materials, from script to finished episode, using an AI-assisted pipeline where I write the scripts and check every claim.",
      ["Video series", "Scripts", "Gemini TTS", "Remotion"]),
     ("Facilitation", "Live workshops on strategic messaging, media literacy and information integrity, for national-level programmes, institutions and young people.",
-     ["Workshops", "Strategic communication", "Media literacy", "UN and development"]),
+     ["Workshops", "Strategic communication", "Media literacy", "Information integrity"]),
 ]
 
 STEPS = [
     ("Learn the system", "I use the product end to end and interview the engineers and subject experts before writing anything, and I log the bugs and UX issues I find on the way."),
     ("Structure it", "I map content to real tasks and audiences: what each person needs to do, in what order, and where they will look for help."),
-    ("Build the content", "Guides, manuals, videos and workshops, produced with docs as code and AI-assisted tooling, with every fee, rule and claim checked against the source."),
+    ("Build the content", "Guides, manuals and videos, produced with docs as code and AI-assisted tooling, with every claim checked against the source."),
     ("Keep it current", "Style guides, templates, version control and a single source of truth, so the content stays accurate after I hand it over."),
 ]
 
@@ -158,18 +158,19 @@ PROJECTS = [
         "tag_labels": ["Help centre", "Knowledge base", "Training video", "Onboarding"],
         "image": "assets/img/mci-p5-poster.jpg", "badge": "Video",
         "wide": True,
-        "facts": [("Role", "Documentation and Training Lead"), ("Dates", "Jul 2026 to Oct 2026"), ("Setting", "Remote contract"), ("Tools", "Docs as code, Gemini TTS, Remotion")],
-        "kpis": [("30", "help centre guides in 7 collections"), ("49", "staff ERP knowledge base articles"), ("35", "training videos, about 53 minutes"), ("5", "email onboarding series")],
+        "facts": [("Role", "Documentation and Training Lead"), ("Dates", "Jul 2026 to Oct 2026"), ("Engagement", "Remote contract"), ("Tools", "Docs as code, Gemini TTS, Remotion")],
+        "kpis": [("30", "help centre guides in 7 collections"), ("49", "staff ERP knowledge base articles"), ("35", "training videos, about 53 minutes"), ("5", "emails in the onboarding series")],
         "sections": [
-            ("The brief", ["<p>The platform has two products: a customer portal for bidding, shipping, payments and tracking, and an internal ERP that staff use to run orders, trucking, shipping, containers and finance. Neither had documentation, and new customers, dealers and staff were learning by asking.</p>"]),
+            ("The brief", ["<p>The platform has two products: a customer portal for bidding, shipping, payments and tracking, and an internal ERP that staff use to run orders, trucking, shipping, containers and finance. Neither had any documentation.</p>"]),
             ("What I did", ["<ul>"
                 "<li>Walked through both products end to end before writing, and logged the bugs and UX issues I found for the engineers.</li>"
                 "<li>Designed and wrote the customer help centre at <a href=\"https://mycarimporter.com/help\" target=\"_blank\" rel=\"noopener\">mycarimporter.com/help</a>: 30 task-based guides in 7 collections that follow the customer journey from sign-up to bidding, shipping, payments and delivery.</li>"
                 "<li>Built a 49-article staff knowledge base for the ERP.</li>"
-                "<li>Produced a 35-video training library (about 53 minutes) in three series: How to Become a Car Dealer (9 episodes), Using My Car Importer (11) and Staff Training (15). I adapted about 3 hours of raw staff recordings into structured episodes and checked every auction fee and rule against official sources.</li>"
+                "<li>Produced a 35-video training library (about 53 minutes) in three series: How to Become a Car Dealer (9 episodes), Using My Car Importer (11) and Staff Training (15). I adapted about 3 hours of raw staff recordings into structured episodes.</li>"
                 "<li>Created the onboarding kit (narrated product tours and a 5-email series for new users) and wrote the system documentation from the codebase.</li>"
                 "</ul>"]),
-            ("How it was made", ["<p>Docs as code: Markdown source, scripted publishing, link audits and SEO metadata, with 188 screenshots and GIFs. The videos use an AI-assisted pipeline (Gemini text-to-speech narration, Remotion for programmatic video, Whisper caption checks), with a human review of every claim before release.</p>"]),
+            ("How it was made", ["<p>I ran the documentation the way an engineering team runs code. Every guide is a Markdown file under version control, and scripts publish the help centre, check for broken links and add search metadata, so a guide can be updated the day the product changes. The guides carry 188 screenshots and GIFs.</p>",
+                                 "<p>For the videos, AI did the repetitive work and I did the judgement. I wrote the scripts, an AI voice (Gemini text-to-speech) recorded the narration, and the episodes were assembled in code with Remotion, which made a 35-video library possible in three months. Whisper checked the captions, and I checked every fee, rule and figure against official sources before an episode went out.</p>"]),
         ],
         "samples_intro": "Two episodes from the customer-facing series. The staff series is internal and not shown.",
         "samples": [
@@ -184,14 +185,14 @@ PROJECTS = [
         "title": "Vendor Management System: a 129-page user manual and quick guides",
         "card_title": "Vendor Management System user manual and quick guides",
         "summary": "Vendors across Africa register, get certified, submit work and get paid through Afreximbank's Vendor Management System. I wrote the documentation that walks them through it.",
-        "card_summary": "A 129-page vendor manual, an 11-page SOW quick guide and video walkthroughs for a pan-African bank's vendor portal.",
+        "card_summary": "A 129-page vendor manual, an 11-page Statement of Work quick guide and video walkthroughs for a pan-African bank's vendor portal.",
         "tags": ["docs", "training"],
         "tag_labels": ["User manual", "Quick guide", "Enterprise"],
         "image": "assets/img/vms-manual-cover.jpg", "badge": "PDF",
         "facts": [("Role", "Documentation Engineer"), ("Engagement", "Contract via Revent Technologies"), ("Audience", "External vendors"), ("Formats", "Manual, quick guides, video")],
-        "kpis": [("129", "page vendor user manual (v1.2)"), ("11", "page SOW quick guide"), ("6", "SOW stages, setup to paid"), ("3", "formats: manual, guide, video")],
+        "kpis": [("129", "page vendor user manual (v1.2)"), ("11", "page SOW quick guide"), ("7", "steps from setup to Paid in the SOW flow"), ("2", "registration paths: individual and corporate")],
         "sections": [
-            ("The brief", ["<p>The VMS covers the full vendor lifecycle: invitation, registration, KYC, re-certification, work requests, and the Statement of Work, timesheet and invoice module. Vendors use it without training, so the documentation has to do the training.</p>"]),
+            ("The brief", ["<p>The VMS covers the full vendor lifecycle: invitation, registration, KYC, re-certification, work requests, and the Statement of Work, timesheet and invoice module. Many vendors have never used the bank's systems before, so the documentation has to do the training.</p>"]),
             ("What I did", ["<ul>"
                 "<li>Wrote the Vendor User Manual: 129 pages of step-by-step, screenshot-led tasks, from receiving an invitation to resubmitting KYC data and confirming payment.</li>"
                 "<li>Condensed the Statement of Work module into an 11-page quick guide that shows the whole flow, from resource setup to Paid, on one page before going step by step.</li>"
@@ -203,7 +204,7 @@ PROJECTS = [
         "samples": [
             {"kind": "doc", "href": "assets/docs/afreximbank-vms-vendor-user-manual-sample.pdf", "img": "assets/img/vms-manual-p9.jpg", "meta": "PDF · 129 pages · 4.9 MB", "title": "Vendor User Manual v1.2", "text": "Registration, KYC, access, work requests, SOWs, timesheets and invoices."},
             {"kind": "doc", "href": "assets/docs/afreximbank-vms-sow-quick-guide-sample.pdf", "img": "assets/img/sow-guide-p3.jpg", "meta": "PDF · 11 pages · 0.7 MB", "title": "SOW Quick Guide for Vendors", "text": "The Statement of Work module from setup to Paid, in eleven pages."},
-            {"kind": "drive", "href": "https://drive.google.com/file/d/1qo_4gJYCp6IOkuIVQu76yb82v0jZEkei/view?usp=drive_link", "img": "assets/img/vms-manual-old-cover.jpg", "meta": "PDF · 45 pages · Google Drive", "title": "Vendor User Manual, earlier edition", "text": "The first release, covering individual and corporate registration, KYC and contract management, with a glossary and FAQ.", "wide": True},
+            {"kind": "drive", "href": "https://drive.google.com/file/d/1qo_4gJYCp6IOkuIVQu76yb82v0jZEkei/view?usp=drive_link", "img": "assets/img/vms-manual-old-cover.jpg", "meta": "PDF · 45 pages · Google Drive", "title": "Vendor User Manual, earlier edition", "text": "An earlier edition covering individual and corporate registration, KYC and contract management, with a glossary and FAQ.", "wide": True},
         ],
     },
     {
@@ -217,9 +218,9 @@ PROJECTS = [
         "tag_labels": ["Facilitation", "Instructional design", "Strategic communication"],
         "image": "assets/img/stratcomms-messaging-cover.jpg", "badge": "Deck",
         "facts": [("Role", "Leadership Strategy Consultant and Facilitator"), ("Dates", "2023 to present"), ("Audience", "Senior communicators and leaders"), ("Format", "Live workshops, 90-minute sessions")],
-        "kpis": [("2,000+", "professionals trained"), ("96%", "satisfaction rate"), ("90", "minute sessions, built to the clock"), ("2", "decks shown here")],
+        "kpis": [("2,000+", "professionals trained"), ("96%", "satisfaction rate"), ("90", "minute sessions, built to the clock"), ("3", "day programmes")],
         "sections": [
-            ("The approach", ["<p>Each session is built around one deliverable participants produce under time pressure, not a lecture. Strategic Messaging ends with every table building and pitching a complete Message House. Social Media Warfare stress-tests those messages against an anonymised real-world case where a false claim outran the official correction.</p>"]),
+            ("The approach", ["<p>Each session is built around one deliverable participants produce under time pressure, not a lecture. Strategic Messaging ends with every table building and pitching a complete Message House. Social Media Warfare stress-tests those messages against an anonymised Nigerian composite case, in which a false claim outran the official correction.</p>"]),
             ("What I did", ["<ul>"
                 "<li>Designed the session objectives, route maps, exercises and simulations, and wrote the facilitator materials.</li>"
                 "<li>Built the decks as interactive HTML, with built-in timers for exercises, so they run in any browser without extra software.</li>"
@@ -251,7 +252,7 @@ PROJECTS = [
                                   "<li><strong>Day 3:</strong> fact-checking and verification, ending in a closing exercise on five posts (genuine, distorted, imposter, AI-generated and heuristic) that stays the same for every cohort so results can be compared.</li></ul>"]),
             ("What I did", ["<p>Designed the curriculum, built the module decks and the companion exercise deck, including pre-workshop surveys, timed exercises and take-home checklists, and led the sessions.</p>"]),
         ],
-        "samples_intro": "All three modules, as interactive decks and PDFs.",
+        "samples_intro": "Modules 1 and 2 and the Day 3 closing exercise, as interactive decks and PDFs.",
         "samples": [
             {"kind": "deck", "html": "assets/decks/media-literacy-module-1.html", "pdf": "assets/decks/media-literacy-module-1.pdf", "img": "assets/img/media-literacy-m1-cover.jpg", "meta": "Module 1 · Day 1 · 44 slides", "title": "Digital, Media and Information Literacy", "text": "The landscape, the vocabulary and the first habits."},
             {"kind": "deck", "html": "assets/decks/media-literacy-module-2.html", "pdf": "assets/decks/media-literacy-module-2.pdf", "img": "assets/img/media-literacy-m2-cover.jpg", "meta": "Module 2 · Day 2 · 38 slides", "title": "Reading Critically and Investigative Thinking", "text": "Three habits, six tactics, four ways propaganda scales."},
@@ -264,17 +265,17 @@ PROJECTS = [
         "title": "Middleware documentation at enterprise scale",
         "card_title": "Middleware documentation for 70+ integration interfaces",
         "summary": "One reliable reference for how a pan-African bank's systems connect, for the engineers who maintain them and the business teams who depend on them.",
-        "card_summary": "SDDs, BRDs and interface documentation across Fiorano, Boomi, Kafka and SFTP.",
+        "card_summary": "Solution designs, requirements documents and interface documentation across Fiorano, Boomi, Kafka and SFTP.",
         "tags": ["docs", "kb"],
         "tag_labels": ["Integration docs", "SDDs and BRDs", "Architecture"],
         "text_media": ("70+", "interfaces documented"),
         "facts": [("Role", "Documentation Engineer (Middleware)"), ("Engagement", "Contract via Revent Technologies"), ("Platforms", "Fiorano, Boomi, Kafka, SFTP"), ("Audience", "Engineers, architects, business owners")],
         "sections": [
             ("What I did", ["<ul>"
+                "<li>Own end-to-end documentation for multiple enterprise systems: integration flows, APIs, middleware processes and user guides.</li>"
                 "<li>Documented 70+ integration interfaces across Fiorano, Boomi, Kafka, SFTP and event-driven architectures.</li>"
                 "<li>Write solution design documents, business requirement documents and user manuals to enterprise governance standards, working daily with developers, architects and business owners.</li>"
-                "<li>Documented legacy and target-state architectures to support system migrations, so knowledge stays with the bank when people move on.</li>"
-                "<li>Own end-to-end documentation for multiple enterprise systems: integration flows, APIs, middleware processes and user guides.</li>"
+                "<li>Document legacy and target-state architectures to support system migrations, so knowledge stays with the bank when people move on.</li>"
                 "</ul>"]),
         ],
         "note": "This documentation is internal to the bank, so there are no samples here. I am happy to walk through how it is structured on a call.",
@@ -288,7 +289,7 @@ PROJECTS = [
         "card_summary": "Team, style guide, templates, SOPs and a SharePoint knowledge repository for an Africa-wide bank.",
         "tags": ["kb", "docs"],
         "tag_labels": ["Knowledge management", "Style guide", "Team building"],
-        "text_media": ("0 to 1", "a documentation function"),
+        "text_media": ("From zero", "to a documentation function"),
         "facts": [("Role", "Team Lead, Technical Writing"), ("Dates", "Dec 2023 to May 2025"), ("Location", "Lagos, Nigeria"), ("Scope", "Group-wide digital products")],
         "sections": [
             ("What I did", ["<ul>"
@@ -300,7 +301,7 @@ PROJECTS = [
                 "<li>Ran documentation gap analyses and introduced a configuration status accounting template for change tracking.</li>"
                 "</ul>"]),
         ],
-        "samples_intro": "How the unit was set up, as presented.",
+        "samples_intro": "How the unit was set up, in slides.",
         "samples": [
             {"kind": "drive", "href": "https://docs.google.com/presentation/d/1PRnHEDwbXF8xC-5iRKQZRlKDtgwimTmk/edit?usp=drive_link", "meta": "Slides · Google Drive", "title": "Building a Technical Writing Unit from Zero", "text": "The gap analysis, team, repository, style guide, templates and SOPs behind the unit.", "wide": True},
         ],
@@ -357,7 +358,7 @@ def build_index():
     <div>
       {label("Documentation, Knowledge &amp; Learning Enablement")}
       <h1>I turn complex systems into <em>knowledge people can use.</em></h1>
-      <p class="lede">Documentation, knowledge management, instructional design, training and course development, for enterprise, product and development teams. From 129-page bank manuals to help centres, training video and live workshops.</p>
+      <p class="lede">When a new system launches, people need more than a login. I write the manuals, build the help centres and design the training that gets them using it, for organisations from Afreximbank and Access Bank to SaaS companies and national training programmes.</p>
       <div class="btn-row">
         <a class="btn btn-primary" href="#work">See the work {I_ARROW}</a>
         <a class="btn btn-ghost" href="mailto:{EMAIL}">Get in touch</a>
@@ -367,10 +368,6 @@ def build_index():
         <span>Abuja, Nigeria (GMT+1)</span>
       </div>
     </div>
-    <figure class="hero-photo" style="margin:0">
-      <img src="assets/img/abdul-oare.jpg" alt="Abdul Oare facilitating a training session">
-      <figcaption>Facilitating a strategic communications session, 2026</figcaption>
-    </figure>
   </div>
 </section>
 
@@ -402,7 +399,7 @@ def build_index():
       <div><h4>Subkit knowledge base</h4><p>Built from scratch in HubSpot for a New York subscription SaaS's v2 launch. Rated 98% in customer satisfaction.</p></div>
       <div><h4>Uphance ERP documentation</h4><p>Knowledge base articles, tutorials and release notes for a cloud ERP for fashion brands; introduced version control.</p></div>
       <div><h4>UN and development consulting</h4><p>Registered UN Global Marketplace (UNGM) vendor, available for UN and development communications and knowledge management work.</p></div>
-      <div><h4>Published writing</h4><p>Published articles and editorial work. <a href="{CLIPPINGS}" target="_blank" rel="noopener">Read on clippings.me</a></p></div>
+      <div><h4>Published writing</h4><p>Articles and editorial work, collected in one place. <a href="{CLIPPINGS}" target="_blank" rel="noopener">Read on clippings.me</a></p></div>
     </div>
   </div>
 </section>
@@ -411,7 +408,7 @@ def build_index():
   <div class="wrap">
     <div class="section-head">
       <div>{label("How I work")}<h2>Understand it first. Then make it easy to learn.</h2></div>
-      <p class="lede">The same four steps, whether the output is a manual, a knowledge base, a video series or a workshop.</p>
+      <p class="lede">The same four steps, whether the output is a manual, a knowledge base or a video series.</p>
     </div>
     <div class="steps">{steps}</div>
   </div>
@@ -420,7 +417,7 @@ def build_index():
 <section class="section" id="experience" style="padding-top:0">
   <div class="wrap">
     <div class="section-head">
-      <div>{label("Experience")}<h2>Ten years of making complex things clear.</h2></div>
+      <div>{label("Experience")}<h2>More than ten years of making complex things clear.</h2></div>
       <p class="lede">Banking, SaaS, logistics, media and public institutions, in Nigeria, the UK and remotely worldwide.</p>
     </div>
     <ol class="timeline">{tl}</ol>
@@ -432,7 +429,7 @@ def build_index():
     <div>{label("About")}<h2>Writer, trainer and systems thinker.</h2></div>
     <div class="about-copy">
       <p>I'm Abdulkerimu Oare, Abdul to most people. I've spent more than ten years in writing and documentation, eight of them documenting SaaS and enterprise software, and alongside that I train people in strategic communication.</p>
-      <p>I'm often the person who builds the documentation function from scratch: a bank's first technical writing unit, a SaaS company's first knowledge base, a logistics platform's entire help centre and training library. I work directly with engineers, product managers and support teams, and treat documentation and training as part of the product.</p>
+      <p>I'm often the person who builds the documentation function from scratch: a bank's first technical writing unit, a SaaS product's knowledge base, a car import platform's entire help centre and training library. I work directly with engineers, product managers and support teams, and treat documentation and training as part of the product.</p>
       <p>I'm based in Abuja, Nigeria, after six years working in London, and I work remotely with teams worldwide.</p>
       <div class="creds">
         <div>
