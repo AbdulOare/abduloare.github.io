@@ -353,20 +353,26 @@ def build_index():
     html += nav("", "")
     html += f"""<main id="main">
 <section class="hero">
-  {CHEV}
-  <div class="wrap hero-grid">
-    <div>
-      {label("Documentation, Knowledge &amp; Learning Enablement")}
-      <h1>I turn complex systems into <em>knowledge people can use.</em></h1>
-      <p class="lede">When a new system launches, people need more than a login. I write the manuals, build the help centres and design the training that gets them using it, for organisations from Afreximbank and Access Bank to SaaS companies and national training programmes.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="#work">See the work {I_ARROW}</a>
-        <a class="btn btn-ghost" href="mailto:{EMAIL}">Get in touch</a>
+  <div class="wrap">
+    {CHEV}
+    {label("Documentation, Knowledge &amp; Learning Enablement")}
+    <h1>I turn complex systems into <em>knowledge people can use.</em></h1>
+    <div class="hero-row">
+      <div>
+        <p class="lede">When a new system launches, people need more than a login. I write the manuals, build the help centres and design the training that gets them using it, for organisations from Afreximbank and Access Bank to SaaS companies and national training programmes.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#work">See the work {I_ARROW}</a>
+          <a class="btn btn-ghost" href="mailto:{EMAIL}">Get in touch</a>
+        </div>
       </div>
-      <div class="hero-meta">
-        <span><i class="dot-live"></i>Available for remote contracts and consultancies</span>
-        <span>Abuja, Nigeria (GMT+1)</span>
-      </div>
+      <aside class="hero-clients" aria-label="Recent work with">
+        <span class="k">Recent work with</span>
+        <ul><li>Afreximbank</li><li>Access Bank</li><li>My Car Importer</li><li>Priori Orators</li><li>The Naija Collective</li><li>Subkit</li></ul>
+      </aside>
+    </div>
+    <div class="hero-meta">
+      <span><i class="dot-live"></i>Available for remote contracts and consultancies</span>
+      <span>Abuja, Nigeria (GMT+1)</span>
     </div>
   </div>
 </section>
@@ -453,8 +459,8 @@ def build_index():
 </section>
 
 <section class="section contact" id="contact" style="overflow:hidden">
-  {CHEV}
   <div class="wrap">
+    {CHEV}
     {label("Contact")}
     <h2>Have a system people need to learn?</h2>
     <p class="lede">Tell me about the product, the audience and the deadline.</p>
@@ -543,8 +549,8 @@ def build_project(i, p):
     html += nav(prefix)
     html += f"""<main id="main">
 <section class="p-hero">
-  {CHEV}
   <div class="wrap">
+    {CHEV}
     <a class="crumb" href="../#work">{I_BACK} All work</a>
     {label(p['client'])}
     <h1>{p['title']}</h1>
