@@ -14,6 +14,12 @@ EMAIL = "abdul.oare@gmail.com"
 LINKEDIN = "https://www.linkedin.com/in/abduloare"
 CLIPPINGS = "https://www.clippings.me/abduloare"
 CV = "assets/docs/Abdulkerimu-Oare-CV.pdf"
+BOOKING = "https://cal.com/abduloare/intro"
+I_CAL = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="3.5" width="11" height="10" rx="2"/><path d="M2.5 7h11M5.5 2v3M10.5 2v3"/></svg>'
+
+
+def book_btn(text="Book a call", cls="btn-primary"):
+    return f'<a class="btn {cls}" href="{BOOKING}" target="_blank" rel="noopener" data-book>{I_CAL} {text}</a>'
 
 # ---------- icons and motif ----------
 CHEV = '<svg class="chev" viewBox="0 0 400 400" aria-hidden="true"><g fill="currentColor"><path d="M30 40h92l118 160-118 160H30l118-160z"/><path d="M176 40h92l118 160-118 160h-92l118-160z"/></g></svg>'
@@ -361,9 +367,10 @@ def build_index():
       <div>
         <p class="lede">When a new system launches, people need more than a login. I write the manuals, build the help centres and design the training that gets them using it, for organisations from Afreximbank and Access Bank to SaaS companies and national training programmes.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="#work">See the work {I_ARROW}</a>
-          <a class="btn btn-ghost" href="mailto:{EMAIL}">Get in touch</a>
+          {book_btn()}
+          <a class="btn btn-ghost" href="#work">See the work {I_ARROW}</a>
         </div>
+        <p class="alt-contact">Prefer to write first? <a href="mailto:{EMAIL}">{EMAIL}</a></p>
       </div>
       <aside class="hero-clients" aria-label="Recent work with">
         <span class="k">Recent work with</span>
@@ -463,9 +470,10 @@ def build_index():
     {CHEV}
     {label("Contact")}
     <h2>Have a system people need to learn?</h2>
-    <p class="lede">Tell me about the product, the audience and the deadline.</p>
+    <p class="lede">Book a 30-minute call, or email me about the product, the audience and the deadline.</p>
     <div class="btn-row" style="margin-top:32px">
-      <a class="btn btn-primary" href="mailto:{EMAIL}">Email me {I_ARROW}</a>
+      {book_btn()}
+      <a class="btn btn-ghost" href="mailto:{EMAIL}">Email me</a>
       <a class="btn btn-ghost" href="{CV}" download>{I_DOWN} Download CV</a>
     </div>
     <div class="contact-links">
@@ -565,7 +573,7 @@ def build_project(i, p):
 <section class="section{next_cls}" style="padding:clamp(48px,6vw,72px) 0">
   <div class="wrap next">
     <div><span class="muted" style="display:block;margin-bottom:8px;font-size:.9rem">Next project</span><a class="big" href="{nxt['slug']}.html">{nxt['card_title']} &rarr;</a></div>
-    <a class="btn btn-primary" href="mailto:{EMAIL}">Discuss a project {I_ARROW}</a>
+    <div class="btn-row">{book_btn()}<a class="btn btn-ghost" href="mailto:{EMAIL}">Email me</a></div>
   </div>
 </section>
 </main>

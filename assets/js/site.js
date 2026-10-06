@@ -32,3 +32,23 @@
   }, { rootMargin: '0px 0px -8% 0px' });
   els.forEach(function (el) { io.observe(el); });
 })();
+
+// Cal.com booking pop-up. The embed script loads on the first click only;
+// without JavaScript the button is a normal link to the booking page.
+(function () {
+  var CAL_LINK = 'abduloare/intro';
+  var ready = false;
+  function loadCal() {
+    (function (C, A, L) { var p = function (a, ar) { a.q.push(ar); }; var d = C.document; C.Cal = C.Cal || function () { var cal = C.Cal; var ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement('script')).src = A; cal.loaded = true; } if (ar[0] === L) { var api = function () { p(api, arguments); }; var namespace = ar[1]; api.q = api.q || []; if (typeof namespace === 'string') { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ['initNamespace', namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, 'https://app.cal.com/embed/embed.js', 'init');
+    window.Cal('init', 'intro', { origin: 'https://cal.com' });
+    window.Cal.ns.intro('ui', { theme: 'dark', hideEventTypeDetails: false, layout: 'month_view', cssVarsPerTheme: { dark: { 'cal-brand': '#08D2DF', 'cal-brand-text': '#001414' } } });
+    ready = true;
+  }
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-book]');
+    if (!btn || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    if (!ready) loadCal();
+    window.Cal.ns.intro('modal', { calLink: CAL_LINK, config: { layout: 'month_view', theme: 'dark' } });
+  });
+})();
